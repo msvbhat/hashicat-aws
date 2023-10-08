@@ -2,7 +2,7 @@
 module "s3_bucket" {
   source = "terraform-aws-modules/s3-bucket/aws"
 
-  bucket = "msvbhat-s3-bucket"
+  bucket_prefix = "msvbhat-s3-bucket"
   acl    = "private"
 
   versioning = {
