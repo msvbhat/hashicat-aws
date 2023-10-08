@@ -1,6 +1,7 @@
 
 module "s3_bucket" {
-  source = "terraform-aws-modules/s3-bucket/aws"
+source  = "app.terraform.io/msvbhat-tfc/s3-bucket/aws"
+  version = "2.8.0"
 
   bucket_prefix = "msvbhat-s3-bucket"
   acl    = "private"
